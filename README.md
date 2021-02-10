@@ -63,13 +63,13 @@
 
  4.  验证能否发送推送，直接访问你的cfworker地址+推送内容（注意网址和推送内容之间要有一个斜杠）：
 
-    ~~~
+    
     # 格式类似如下：
     https://******-sound-f816.qyu0615.workers.dev/test
     
     # 正常返回如下
     {"errcode":0,"errmsg":"ok","invaliduser":"","invalidtag":"2"}
-    ~~~
+    
 
     
 
