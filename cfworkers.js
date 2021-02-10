@@ -22,7 +22,7 @@ async function gatherResponse(response) {
 
 async function postWeChatUrl(request) {
   // 获取token链接，自行修改企业id和秘钥
-  const url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=wwff0b6b7bc6c9f80f&corpsecret=7mOGMhz6j2BnL7iPBu3I_GezFLxEwV5UO9zTbkQNXkM"
+  const url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=***************&corpsecret=*******************"
   const init = {
     headers: {
       "content-type": "application/json;charset=UTF-8",
@@ -43,7 +43,7 @@ async function postWeChatUrl(request) {
   "totag": "2",
   "msgtype": "text",
   // 应用id
-  "agentid": 1000003,
+  "agentid": ********,
   "text": {
     // 发送文本内容
     "content": text
