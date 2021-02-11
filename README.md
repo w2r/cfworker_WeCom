@@ -20,7 +20,7 @@
 
  2. 把默认cf worker脚本区域代码清空， 复制cfworkers.js内容，粘贴到代码区域内
 
- 3. 修改corpidid，agentid 和secret的值（具体获得方式：[点我直达](https://github.com/w2r/hostloc2tg/blob/master/hostloc2wechat/README.md#%E4%BB%A5%E4%B8%8B%E4%BB%8B%E7%BB%8D%E7%9A%84%E6%98%AF%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E5%BA%94%E7%94%A8%E5%8F%AF%E4%BB%A5%E5%BE%AE%E4%BF%A1%E6%8E%A5%E4%BF%A1%E6%81%AF%E6%97%A0%E9%9C%80%E5%AE%89%E8%A3%85%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1)）
+ 3. 修改corpidid，agentid 和secret， cf worker地址（具体获得方式：[点我直达](https://github.com/w2r/hostloc2tg/blob/master/hostloc2wechat/README.md#%E4%BB%A5%E4%B8%8B%E4%BB%8B%E7%BB%8D%E7%9A%84%E6%98%AF%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E5%BA%94%E7%94%A8%E5%8F%AF%E4%BB%A5%E5%BE%AE%E4%BF%A1%E6%8E%A5%E4%BF%A1%E6%81%AF%E6%97%A0%E9%9C%80%E5%AE%89%E8%A3%85%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1)）
 
     ~~~~
     # 第一处修改地方
@@ -56,6 +56,8 @@
           'Content-Type': 'application/json',
         },
       }
+      # 第三处修改地方
+      # 把cfworker地址修改为你自己的
     
     ~~~~
 
