@@ -32,8 +32,8 @@ async function postWeChatUrl(request) {
   const response = await fetch(url, init)
   const results = await gatherResponse(response)
   var jsonObj = JSON.parse(results)
-  // 从cf workers截取发送内容，默认/后面全为发送内容，可自行添加参数之类的，切记把替换链接换成非发送内容部分
-  var text = decodeURI(request.url.replace("https://lingering-sound-f816.qyu0615.workers.dev/", ""))
+  // 从cf workers截取发送内容，默认/后面全为发送内容，自行替换
+  var text = decodeURI(request.url.replace("https://********0615.workers.dev/", ""))
   var key = jsonObj["access_token"]
   var wechat_work_url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + key;
   var template = 
