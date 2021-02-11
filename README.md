@@ -57,7 +57,7 @@
         },
       }
       # 第三处修改地方
-      # 把cfworker地址修改为你自己的（记得带上网址后面的/
+      # 把cfworker地址修改为你自己的（记得带上网址后面的/)
       var text = decodeURI(request.url.replace("https://********0615.workers.dev/", ""))
 
     
