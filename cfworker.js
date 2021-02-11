@@ -38,7 +38,7 @@ async function postWeChatUrl(request) {
   var wechat_work_url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + key;
   var template = 
  {
-  // touser为必须参数，toparty，totag为非必须参数，针对单个用户发送时间需要删除
+  // touser为必需参数，toparty，totag为非必需参数，针对单个/多个用户发送需要删除toparty，totag
   // touser留空会全部发布，若想针对单个用户，直接用"用户ID|用户ID|用户ID”的格式
   "touser": "",
   "toparty": "1",
