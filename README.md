@@ -69,7 +69,7 @@ https://steep-limit-4c16.qyu0615.workers.dev/?form=video&content=3DZrNS9ftgjSHX1
     同photo， content内容为media_id（没有测试图，垃圾接口仅支持amr格式语音，懒得搞）
 
 ~~~
-https://steep-limit-4c16.qyu0615.workers.dev/?form=photo&content=**********
+https://steep-limit-4c16.qyu0615.workers.dev/?form=voice&content=**********
 ~~~
 
 
