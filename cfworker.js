@@ -47,7 +47,10 @@ async function postWeChatUrl(request) {
   var form = url2.searchParams.get('form')
   // var content = url2.searchParams.get('content')
   // 解决推送内容含有&被截断的问题
-  var content = decodeURI(request.url.replace(cf_worker + "?form=" + form + "&content=", ""))
+  // 解决#的问题
+  var reg = new RegExp( '%23' , "g" )
+  var content = decodeURI(request.url.replace(cf_worker + "?form=" + form + "&content=", "")).replace(reg, "#")
+  
   var key = jsonObj["access_token"]
   var wechat_work_url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + key;
   switch(form)
